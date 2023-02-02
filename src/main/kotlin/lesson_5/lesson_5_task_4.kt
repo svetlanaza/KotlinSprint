@@ -12,7 +12,7 @@ fun main() {
 
     val password = readLine()
 
-    val resultMessage = if (password == PASSWORD) "Приветствуем вас, Batman!"
+    val resultMessage = if (password == PASSWORD) "Приветствуем Вас, Batman!"
     else "Ошибка авторизации"
 
     println(resultMessage)
