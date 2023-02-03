@@ -5,17 +5,17 @@ fun main() {
 
     val login = readLine()
 
-    val resultText = if (login != LOGIN) "Пожалуйств, зарегистрируйтесь!"
-    else "Введите пороль"
+    val greetingsMessage = if (login != LOGIN) "Пожалуйста, зарегистрируйтесь!"
+    else "Введите пароль"
 
-    println(resultText)
+    println(greetingsMessage)
 
     val password = readLine()
 
-    val resultMessage = if (password == PASSWORD) "Приветствуем Вас, Batman!"
+    val informMessage = if (password == PASSWORD) "Приветствуем Вас, $LOGIN!"
     else "Ошибка авторизации"
 
-    println(resultMessage)
+    println(informMessage)
 }
 
 const val LOGIN = "Batman"
