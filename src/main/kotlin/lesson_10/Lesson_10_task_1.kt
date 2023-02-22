@@ -9,7 +9,7 @@ fun main() {
 
 
     if (userThrow > kompThrow) {
-        println("Победило человечество!")
+        println("Победило человечество!!")
 
     } else if (userThrow == kompThrow) {
         println("Ничья")
