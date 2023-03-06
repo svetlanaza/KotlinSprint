@@ -2,7 +2,8 @@ package lesson_10
 
 fun main() {
 
-   val password = passwordCreation(9)
+   val password = passwordCreation(0)
+   println(password)
 
    }
 fun passwordCreation(number : Int) :String {
