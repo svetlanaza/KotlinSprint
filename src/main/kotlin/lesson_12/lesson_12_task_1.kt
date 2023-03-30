@@ -19,8 +19,8 @@ fun main() {
     println()
     println("Погода на 19 мая:")
     may19.printWeather()
-
 }
+
 class Weather() {
     var temperatureDay = 20
     var temperatureNight = 12
@@ -33,5 +33,4 @@ class Weather() {
         println("Осадки: $precipitation")
         println("Атмосферное давление: $atmospherePressure мм")
     }
-
 }
