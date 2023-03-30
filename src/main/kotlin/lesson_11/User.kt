@@ -15,9 +15,7 @@ class User(
         println("Пароль $password")
     }
 
-    fun userInfo() {
-        var bio = userData()
-    }
+
 
     fun passwordChange() {
         println("Введите текущий пароль")
@@ -37,4 +35,6 @@ class User(
     fun userMessage(message: String) {
         println("$name, Вам отправленно сообщение на почту - $login, об изменении пароля")
     }
+
+
 }
