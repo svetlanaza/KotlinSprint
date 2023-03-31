@@ -1,14 +1,14 @@
 package lesson_11
 
 fun main() {
-    val user1 = User(
+    val user1 = Users(
         id = 1,
         name = "Роман",
         login = "roman@mail.com",
         password = "qwerty123"
     )
 
-    val user2 = User(
+    val user2 = Users(
         id = 2,
         name = "Ольга",
         login = "olga@mail.com",

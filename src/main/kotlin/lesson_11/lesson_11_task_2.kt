@@ -1,6 +1,23 @@
 package lesson_11
 
-class User(
+fun main() {
+    val user = Users(
+        id = 1,
+        name = "Роман",
+        login = "roman@mail.com",
+        password = "qwerty123",
+    )
+
+    user.userData()
+    user.passwordChange()
+    println()
+    user.userMessage("")
+    //user.userInfo()
+    user.userData()
+
+}
+
+class Users(
     val id: Int,
     val name: String,
     val login: String,
@@ -15,6 +32,11 @@ class User(
         println("Пароль $password")
     }
 
+    fun userInfo(): String? {
+        val bio = null
+        return readLine().toString()
+        println(bio)
+    }
 
 
     fun passwordChange() {
@@ -24,17 +46,15 @@ class User(
             println("Введите новый пароль")
             val passwordNew = readLine().toString()
             password = passwordNew
-            println()
             println("Пароль изменен!")
-            println()
+
         } else {
             println("Неверный пароль")
         }
     }
 
     fun userMessage(message: String) {
-        println("$name, Вам отправленно сообщение на почту - $login, об изменении пароля")
+        println("$name, Вам отправленно сообщение на почту - $login, $message")
     }
-
 
 }
