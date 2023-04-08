@@ -42,7 +42,7 @@ fun main() {
         if (answer != "Да") {
             break
         } else {
-            addPerson(persons)
+            Person(null, 0, null).addPerson(persons)
 
         }
 
