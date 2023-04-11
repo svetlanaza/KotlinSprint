@@ -1,10 +1,10 @@
 package lesson_14
 
-open class Massage (
+open class Message (
     val text: String,
     val author: String,
 ) {
-    fun publication() {
+    fun printPost() {
         println("\"$text\"")
         println("$author \n")
     }
@@ -13,9 +13,9 @@ class Comment(
     author: String,
     text: String,
     val info: String,
-): Massage(author, text) {
+): Message(author, text) {
 
-    fun commentPost() {
+    fun printComment() {
         println("$info \n")
         println(author)
         println(text)
@@ -23,7 +23,7 @@ class Comment(
     }
 }
 fun main() {
-    Massage("Космические корабли", "Петров").publication()
+    Message("Космические корабли", "Петров").printPost()
     Comment("Сидоркин", "Спорные вопросы относительно данных характерристик",
-        "Описание основных характеристик космических кораблей").commentPost()
+        "Описание основных характеристик космических кораблей").printComment()
 }
