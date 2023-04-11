@@ -1,9 +1,9 @@
 package lesson_14
 
-class StandardShip(_name: String) {
-    val name = _name
-    val speed = 20
-    val capacity = 200
+class StandardShip
+    (val name: String,
+    val speed: Int = 20,
+    val capacity: Int = 200,) {
     fun movement() {
         println("$name движется со скоростью $speed узлов.")
     }
