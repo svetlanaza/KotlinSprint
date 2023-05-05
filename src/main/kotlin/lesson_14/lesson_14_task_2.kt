@@ -3,6 +3,9 @@ package lesson_14
 open class Ship(
     val name: String,
     val speed: Int,
+    val weight: Int,
+    val length: Int,
+
 
     ) {
     fun printSpeedMovement() {
@@ -13,7 +16,9 @@ open class Ship(
 class Cargo(
     name: String,
     speed: Int,
-) : Ship(name, speed) {
+    weight: Int,
+    length: Int,
+) : Ship(name, speed, weight, length) {
     val capacity = 200
     val spaciousness = 400
     fun printInfoCargo() {
@@ -24,9 +29,11 @@ class Cargo(
 class Icebreaker(
     name: String,
     speed: Int,
-) : Ship(name, speed) {
-    val weight = 21000
-    val length = 150
+    weight: Int,
+    length: Int,
+) : Ship(name, speed, weight, length) {
+    val typeIcebreaker = ""
+    val numberOfReactor = 0
     fun breaksIce() {
         println("Может колоть лед.")
     }
@@ -38,11 +45,11 @@ class Icebreaker(
 }
 
 fun main() {
-    val cargo1 = Ship("Адмирал", 20)
+    val cargo1 = Ship("Адмирал", 20, 400000, 150)
     cargo1.printSpeedMovement()
-    Cargo("Адмирал", 20).printInfoCargo()
-    val icebreaker1 = Ship("Профессор Шварценгольд", 10)
+    Cargo("Адмирал", 20,450000,230).printInfoCargo()
+    val icebreaker1 = Ship("Профессор Шварценгольд", 10, 500000, 200)
     icebreaker1.printSpeedMovement()
-    Icebreaker("Профессор Шварценгольд", 10).infoIcebreaker()
+    Icebreaker("Профессор Шварценгольд", 10,50000,250).infoIcebreaker()
 
 }
