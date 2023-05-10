@@ -1,13 +1,11 @@
 package lesson_15
 
 interface Flying {
-    fun fly() {
-    }
+    fun fly()
 }
 
 interface Swimming {
-    fun swim() {
-    }
+    fun swim()
 }
 
 class Seagull : Flying {
