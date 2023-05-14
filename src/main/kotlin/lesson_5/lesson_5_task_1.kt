@@ -1,7 +1,7 @@
 package lesson_5
 
 fun main() {
-
+    println("Сложите два числа:")
     println(NUMBER_1)
     println(NUMbER_2)
 
@@ -13,5 +13,6 @@ fun main() {
         println("Доступ закрыт!")
     }
 }
+
 const val NUMBER_1 = 7
 const val NUMbER_2 = 4
