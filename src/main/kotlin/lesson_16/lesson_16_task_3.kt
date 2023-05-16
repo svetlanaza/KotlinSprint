@@ -1,8 +1,6 @@
 package lesson_16
 
-class UserHaman(name: String, login: String) {
-
-    private val password = "Barmaley13"
+class UserHaman(name: String, login: String, private val password: String) {
     val name = name
 
     fun greetingsEndCheckPassword() {
@@ -17,6 +15,6 @@ class UserHaman(name: String, login: String) {
 }
 
 fun main() {
-    val user = UserHaman("Alex", "bom@bom")
+    val user = UserHaman("Alex", "bom@bom", "qwerty48")
     user.greetingsEndCheckPassword()
 }
