@@ -1,13 +1,12 @@
 package lesson_16
 
 class UserHaman(name: String, login: String, private val password: String) {
-    val name = name
 
-    fun greetingsEndCheckPassword() {
+    fun checkPassword() {
         println("Введите пороль!")
         val passwordEnter = readln()
         if (passwordEnter == password) {
-            println("Добро пожаловать, $name!")
+            println("Верный пароль")
         } else {
             println("Неверный пароль")
         }
@@ -16,5 +15,5 @@ class UserHaman(name: String, login: String, private val password: String) {
 
 fun main() {
     val user = UserHaman("Alex", "bom@bom", "qwerty48")
-    user.greetingsEndCheckPassword()
+    user.checkPassword()
 }
