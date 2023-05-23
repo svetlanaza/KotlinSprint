@@ -1,20 +1,23 @@
 package lesson_17
 
-class Quiz(question: String, answer: String) {
-    var question = "Какая столица Франции"
+class QuizItem(question: String, answer: String) {
+    var question = question
         set(value) {
             field = value
         }
 
-    var answer = "Париж"
+    var answer: String = answer
         get() = field
-        set(value: String) {
-            field = "dfdfdfd"
+        set(value) {
+            field = value
         }
 }
 
-fun  main() {
-    var quiz = Quiz("Столица Англии", "Лондон")
-    println(quiz.question)
-    println(quiz.answer)
+fun main() {
+    val quizItem = QuizItem("Как называется столица Японии?", "Токио")
+    println("Вопрос: ${quizItem.question}")
+    println("Ответ: ${quizItem.answer}")
+
+    quizItem.answer = "Киото"
+    println("Новый ответ: ${quizItem.answer}")
 }
