@@ -1,9 +1,11 @@
 package lesson_16
 
 class UserHaman(name: String, login: String, pass: String) {
+
     val name = name
     val login = login
     private val pass = pass
+
     fun checkPassword(password: String): Boolean {
         return pass == password
     }
